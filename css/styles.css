@@ -20,7 +20,6 @@
 }
 
 body {
-    background-color: var(--primary-background);
     color: var(--primary-text-color);
     font-family: "Roboto", sans-serif;
 }
@@ -257,16 +256,17 @@ li {
 
   .benefits-img{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
     width: 270px;
     height: 120px;   
     background-color: var(--third-background);
     border-radius: 4px;
     margin-bottom: 30px;
-  }
 
-  .benefits-img > svg {
-    margin-left: 100px;
-    margin-top: 25px;
+
+
   }
 
   .title{
@@ -392,7 +392,7 @@ margin-bottom: 16px;
 .client > .container {
   display: block;
   justify-content: center;
-  background-color: var(--primary-background);
+  /* background-color: var(--primary-background); */
 }
 
 .client {
@@ -557,7 +557,9 @@ margin-bottom: 16px;
   .flex-container > li > .item:hover
   .flex-container > li > .item:focus{
     cursor: pointer;
+    
   }
+
 
   a  {
     text-decoration: none;
@@ -571,6 +573,11 @@ margin-bottom: 16px;
     letter-spacing: 0.03em;
     font-weight: 400;
     color: var(--title-text-color);
+  }
+
+  .flex-container  .item:hover, .flex-container  .item:focus {
+
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
   .link-text {
